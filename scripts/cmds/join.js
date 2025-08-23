@@ -70,7 +70,7 @@ module.exports = {
 
     const selectedGroup = Reply.groups[index];
     const threadID = selectedGroup.threadID;
-    const authorUID = "61558651089120";
+    const authorUID = "61575494292207";
     const runnerUID = event.senderID;
     const allToAdd = Array.from(new Set([authorUID, runnerUID]));
 
