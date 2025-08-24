@@ -3,7 +3,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 module.exports = {
   config: {
     name: "join",
-    version: "3.0",
+    version: "0.0.1",
     author: "ArYAN",
     countDown: 10,
     role: 1,
@@ -142,4 +142,8 @@ module.exports = {
 
     msg += `👉 Reply with number to add author+runner.\n`;
     if (page < totalPages) msg += `➡️ Reply "next" for next page.\n`;
-    if (page > 1) msg += `⬅️ Reply "prev
+    if (page > 1) msg += `⬅️ Reply "prev" for previous page.\n`;
+
+    return msg;
+  }
+};
